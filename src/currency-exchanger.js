@@ -1,12 +1,12 @@
 // Business Logic
 export async function currencyExchange() {
   try{
-    let exchangedAmount = await fetch(`https://pro.exchangerate-api.com/v6/{process.env.API_Key}/pair/USD/{targetCurrency}`);
+    let exchangedAmount = await fetch(`https://v6.exchangerate-api.com/v6/${process.env.API_Key}/latest/USD`);
     let exchangedResponse;
     if (exchangedAmount.ok && exchangedAmount.status == 200) {
       exchangedResponse = await exchangedAmount.json();
     } else {
-      exchangedResponse = false;
+      exchangedResponse = false; //This will become the error code returned
     }
     return exchangedResponse;
   } catch(error) {
