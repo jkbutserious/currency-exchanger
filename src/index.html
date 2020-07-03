@@ -8,21 +8,73 @@
 
 <body>
   <div class="container">
-    <div class="form-control" id="currency-form">
+    <form id="currency-form">
       <div class="form-group">
         <label for="usd">Please enter the amount in US dollars: $</label>
-        <input id="usd" class="form-control" type="number" placeholder="0.00">
+        <input id="usd-amount" class="form-control" type="number" placeholder="0.00">
       </div> 
-      <div>
-      <select class="form-control" id="currency">
-        <option value="CUR">Currency</option>
-      </select>
+
+      <div class="form-control">      
+        <select class="form-control" id="currency">
+          <option value="1">Currency</option>
+          <option value="2">Currency</option>
+          <option value="3">Currency</option>
+          <option value="4">Currency</option>
+          <option value="5">Currency</option>
+          <option value="6">Currency</option>
+          <option value="7">Currency</option>
+          <option value="8">Currency</option>
+          <option value="9">Currency</option>
+          <option value="10">Currency</option>
+          <option value="11">Currency</option>
+          <option value="12">Currency</option>
+          <option value="13">Currency</option>
+          <option value="14">Currency</option>
+          <option value="15">Currency</option>
+          <option value="16">Currency</option>
+          <option value="17">Currency</option>
+          <option value="18">Currency</option>
+          <option value="19">Currency</option>
+          <option value="20">Currency</option>
+          <option value="21">Currency</option>
+          <option value="22">Currency</option>
+          <option value="23">Currency</option>
+          <option value="24">Currency</option>
+          <option value="25">Currency</option>
+          <option value="26">Currency</option>
+          <option value="27">Currency</option>
+          <option value="28">Currency</option>
+          <option value="29">Currency</option>
+          <option value="30">Currency</option>
+          <option value="31">Currency</option>
+          <option value="32">Currency</option>
+          <option value="33">Currency</option>
+          <option value="34">Currency</option>
+          <option value="35">Currency</option>
+          <option value="36">Currency</option>
+          <option value="37">Currency</option>
+          <option value="38">Currency</option>
+          <option value="39">Currency</option>
+          <option value="40">Currency</option>
+          <option value="41">Currency</option>
+          <option value="42">Currency</option>
+          <option value="43">Currency</option>
+          <option value="44">Currency</option>
+          <option value="45">Currency</option>
+          <option value="46">Currency</option>
+          <option value="47">Currency</option>
+          <option value="48">Currency</option>
+          <option value="49">Currency</option>
+          <option value="50">Currency</option>
+        </select>
+
+        <button class="btn" type="submit">Exchange</button>
       </div>
-      <button class="btn" type="submit">Exchange</button>
-      <div id="output">
-        <span id="exchange-rate"></span>
-        <span id="exchange-currency"></span>
-      </div>
+    </form>
+
+    <div id="output">
+      <span id="exchange-rate"></span>
+      <span id="exchange-currency"></span>
     </div>
   </div>
 </body>

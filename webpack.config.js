@@ -18,10 +18,10 @@ module.exports = {
     new UglifyJsPlugin({ sourceMap: true }),  // new line
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'project-name',
+      title: 'Currency Exchanger',
       template: './src/index.html',
       inject: 'body'
-    })
+    }),
     new Dotenv()
   ],
   module: {
