@@ -3,14 +3,26 @@
 
 <head>
   <script type="text/javascript" src="bundle.js"></script>
-  <title>Project Name</title>
+  <title>Currency Exchanger</title>
 </head>
 
 <body>
   <div class="container">
     <div class="form-control" id="currency-form">
+      <div class="form-group">
+        <label for="usd">Please enter the amount in US dollars: $</label>
+        <input id="usd" class="form-control" type="number" placeholder="0.00">
+      </div> 
+      <div>
       <select class="form-control" id="currency">
         <option value="CUR">Currency</option>
+      </select>
+      </div>
+      <button class="btn" type="submit">Exchange</button>
+      <div id="output">
+        <span id="exchange-rate"></span>
+        <span id="exchange-currency"></span>
+      </div>
     </div>
   </div>
 </body>

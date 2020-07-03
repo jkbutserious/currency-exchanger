@@ -10,8 +10,9 @@ async function getExchangedCurrency(currency) {
     $("#exchanged-currency").text("Something went wrong with your request") // This will become a notification that displays the specific error
   }
   else {
-    $("#exchange-rate").text(`The current exchange rate from US Dollars is: ${currencyResponse.}${currency}`) //explore ability to nest template literal expressions
-    $("#exchange-currency").text(`The exchanged amount is: ${}`)
+    let exchangeRate = parseInt(currencyResponse.currency);
+    $("#exchange-rate").text(`The current exchange rate from US Dollars is: ${exchangeRate}`) //explore ability to nest template literal expressions
+    $("#exchange-currency").text(`The exchanged amount is: ${originCurrency * exchangeRate}`);
   }
 }
 
