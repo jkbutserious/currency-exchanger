@@ -3,15 +3,14 @@ export async function currencyExchange() {
   try{
     let exchangedAmount = await fetch(`https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/USD`);
     let exchangedResponse;
-    // let errorCode;
     if (exchangedAmount.ok && exchangedAmount.status == 200) {
-      exchangedResponse = await exchangedAmount.json();
-      
+    exchangedResponse = {status: exchangedAmount.status, content: await exchangedAmount.json()};
+    console.log(exchangedResponse.result);
     } else {
-      exchangedResponse = false; //This will become the error code returned
+      exchangedResponse = {status: exchangedAmount.status};
     }
     return exchangedResponse;
   } catch(error) {
-    return false;
+    return {status: -1};
   }
 }

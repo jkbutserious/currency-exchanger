@@ -32,29 +32,9 @@ Sample Output: Notification: That currency does not exist.
 
 ## Setup/Installation Requirements
 
-To use this site:
+To contribute to this project, you will need to perform the following instructions in order:
 
-1. Open your preferred browser.
-2. Navigate to https://jkbutserious.github.io/REPO-NAME.
-3. USER INSTRUCTIONS
 
-You will receive output in the form of a range of numbers and strings.
-
-To contribute to this project:
-
-1. Open your preferred browser.
-2. Navigate to https://github.com/jkbutserious/REPO-NAME.
-3. Log into or sign up for your GitHub account.
-4. Click the **Fork** button to copy the repository and all source code.
-5. From your forked repository, you can download or clone the repository, by clicking the **Clone or download** button.
-  * To clone the repository in GitHub Desktop, click the **Open in Desktop** option
-  * To download the repository, click the **Download ZIP** option, save the archive to your computer, and extract it to the folder of your choice
-6. Use your preferred code editor to edit index.html, styles.css, and/or scripts.js. **Note**: the following files are inclusions from popular code libraries and should not be edited:
-  * bootstrap.css
-  * bootstrap.css.map
-  * jquery-3.5.1.js
-7. Save any changes you make in your code editor and use your preferred git solution to commit your changes.
-8. Push your changes to your forked repository.
 
 ## Known Bugs
 

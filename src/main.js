@@ -6,11 +6,14 @@ import { currencyExchange } from './currency-exchanger.js';
 
 async function getExchangedCurrency(currencyCode, originCurrency) {
   const currencyResponse = await currencyExchange();
-  if (currencyResponse === false) {
-    $("#exchanged-currency").text("Something went wrong with your request"); // This will become a notification that displays the specific error
+  if (currencyResponse.status !== 200) {
+    $("#exchange-currency").text(`Sorry, something went wrong (Error code: ${currencyResponse.status})`); // This will become a notification that displays the specific error
+  }
+  else if (currencyResponse.content.conversion_rates.length === 0 || !currencyResponse.content.conversion_rates[currencyCode]) {
+    $("#exchange-currency").text("The currency " + currencyCode + " doesn't exist.")
   }
   else {
-    const exchangeRate = currencyResponse.conversion_rates[currencyCode];
+    const exchangeRate = currencyResponse.content.conversion_rates[currencyCode];
     
     $("#exchange-rate").text(`The current exchange rate from US Dollars is: ${exchangeRate}`);
 
