@@ -34,7 +34,37 @@ Sample Output: Notification: That currency does not exist.
 
 To contribute to this project, you will need to perform the following instructions in order:
 
+### Obtain an API Key
+1. Open your preferred browser.
+2. Navigate to https://www.exchangerate-api.com/.
+3. In the **Your Email Address** field, enter your email address and click the **Get Free Key** button.
+4. Check your email for a message from ExchangeRate-API and click the link in the email body to confirm your email address.
+5. In your [dashboard](https://www.exchangerate-api.com/app/dashboard), you can see your API key. Do not do anything with your API key, yet - see the **Create .env and .gitignore files** section, below.
 
+### Fork and download the repository
+1. Open your preferred browser.
+2. Navigate to https://github.com/jkbutserious/currency-exchanger.
+3. Log into or sign up for your GitHub account.
+4. Click the **Fork** button to copy the repository and all source code.
+5. From your forked repository, you can download or clone the repository, by clicking the **Clone or download** button.
+  * To clone the repository in GitHub Desktop, click the **Open in Desktop** option
+  * To download the repository, click the **Download ZIP** option, save the archive to your computer, and extract it to the folder of your choice
+6. Use your preferred code editor to edit index.html, styles.css, currency-exchanger.js and/or main.js. **Note**: you should not attempt to edit other files in the repository unless you are familiar with webpack and nodeJS, as these are essential includes and can cause issues.
+
+### Create .env and .gitignore files
+1. In the root directory of your forked repository, create a blank file called ".env" and a blank file called ".gitignore".
+2. Open both files in your preferred code editor.
+3. In your .env file, copy your API key using this format: `API_KEY = YOUR_API_KEY_HERE`. **IMPORTANT**: Do not enter your API key in any other file or code block in this repository. Doing so will expose your API key (and possibly other sensitive information) to any user who can view your GitHub repository or the final web page.
+4. In your .gitignore file, add the following lines:
+* node_modules/
+* .DS_Store
+* dist/
+* .env
+
+### Prepare code to push
+1. Clean, refactor, and scrub your code of any sensitive information (such as any instances of your API key anywhere other than your .env file).
+2. Save any changes you make in your code editor and use your preferred git solution to commit your changes.
+3. Push your changes to your forked repository.
 
 ## Known Bugs
 
