@@ -1,12 +1,16 @@
-# TITLE
+# Currency Exchanger
 
-#### BRIEF DESCRIPTION, 6.15.2020
+#### Asynchrony and API Call Project for Epicodus, 7.3.2020
 
 #### By Jeff Kim
 
 ## Description
 
-_DETAILED DESCRIPTION_
+Planning a trip? Frequent flyer? Investing in foreign markets? Just like looking at pretty-colored bills?
+
+It's never a bad idea to know how your cash assets measure up in other nations, especially if you plan on visiting or purchasing goods there anytime soon. Keep up-to-date on the strength of the dollar with this handy Currency Exchanger!
+
+This project uses the ExchangeRate-API to get data on the latest exchange rate for the US Dollar for 50 international currencies. Simply enter a value in USD and click the **Convert** button!
 
 ## Specs
 
@@ -39,7 +43,7 @@ To contribute to this project, you will need to perform the following instructio
 2. Navigate to https://www.exchangerate-api.com/.
 3. In the **Your Email Address** field, enter your email address and click the **Get Free Key** button.
 4. Check your email for a message from ExchangeRate-API and click the link in the email body to confirm your email address.
-5. In your [dashboard](https://www.exchangerate-api.com/app/dashboard), you can see your API key. Do not do anything with your API key, yet - see the **Create .env and .gitignore files** section, below.
+5. In your [dashboard](https://www.exchangerate-api.com/app/dashboard), you can see your API key. Do not do anything with your API key, yet - see the [Create .env and .gitignore files](### Create .env and .gitignore files) section, below.
 
 ### Fork and download the repository
 1. Open your preferred browser.
@@ -47,19 +51,25 @@ To contribute to this project, you will need to perform the following instructio
 3. Log into or sign up for your GitHub account.
 4. Click the **Fork** button to copy the repository and all source code.
 5. From your forked repository, you can download or clone the repository, by clicking the **Clone or download** button.
-  * To clone the repository in GitHub Desktop, click the **Open in Desktop** option
-  * To download the repository, click the **Download ZIP** option, save the archive to your computer, and extract it to the folder of your choice
-6. Use your preferred code editor to edit index.html, styles.css, currency-exchanger.js and/or main.js. **Note**: you should not attempt to edit other files in the repository unless you are familiar with webpack and nodeJS, as these are essential includes and can cause issues.
+   * To clone the repository in GitHub Desktop, click the **Open in Desktop** option
+   * To download the repository, click the **Download ZIP** option, save the archive to your computer, and extract it to the folder of your choice
+6. Use your preferred code editor to edit `index.html`, `styles.css`, `currency-exchanger.js` and/or `main.js`.
+
+**Note**: you should not attempt to edit other files in the repository unless you are familiar with webpack and nodeJS, as these are essential includes and can cause issues.
 
 ### Create .env and .gitignore files
-1. In the root directory of your forked repository, create a blank file called ".env" and a blank file called ".gitignore".
+1. In the root directory of your forked repository, create a blank file called `.env` and a blank file called `.gitignore`.
 2. Open both files in your preferred code editor.
-3. In your .env file, copy your API key using this format: `API_KEY = YOUR_API_KEY_HERE`. **IMPORTANT**: Do not enter your API key in any other file or code block in this repository. Doing so will expose your API key (and possibly other sensitive information) to any user who can view your GitHub repository or the final web page.
-4. In your .gitignore file, add the following lines:
-* node_modules/
-* .DS_Store
-* dist/
-* .env
+3. In your `.env` file, copy your API key using this format: `API_KEY = YOUR_API_KEY_HERE`. 
+**IMPORTANT**: Do not enter your API key in any other file or code block in this repository. Doing so will expose your API key (and possibly other sensitive information) to any user who can view your GitHub repository or the final web page.
+4. In your `.gitignore` file, add the following lines:
+
+    ```gitignore
+    node_modules/
+    .DS_Store
+    dist/
+    .env
+    ```
 
 ### Prepare code to push
 1. Clean, refactor, and scrub your code of any sensitive information (such as any instances of your API key anywhere other than your .env file).
@@ -84,8 +94,9 @@ This page was created using the following technologies:
 * Bootstrap
 * JavaScript
 * JQuery
+* Webpack
 
-### License
+## License
 
 Copyright © 2020 Jeffrey Kim
 
