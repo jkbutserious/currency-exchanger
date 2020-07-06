@@ -1,1 +1,37 @@
-/* Some CSS! */
+.jumbotron {
+  background-image: url(../assets/images/money.png);
+}
+
+body {
+  font-family: "Courier";
+}
+
+.panel {
+  min-height: 7.5rem;
+  max-width: 20rem;
+  border: solid 2px;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+#us-dollar {
+  float: left;
+}
+
+.prefix-usd::before {
+  content: "$"
+}
+
+#int-currency {
+  float: left;
+  margin: 0 0 0 5rem;
+}
+
+.btn {
+  margin: 0.5rem 0 0 0
+}
+
+.output {
+  clear: both;
+
+}
