@@ -19,8 +19,18 @@ body {
 }
 
 .prefix-usd::before {
-  content: "$"
+  content: "$";
+  position: absolute;
+  top: 0.4rem;
+  left: 1ch;
 }
+
+.prefix-usd {
+  position: relative;
+}
+
+#usd-amount {
+  padding-left: 20px;}
 
 #int-currency {
   float: left;
